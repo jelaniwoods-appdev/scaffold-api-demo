@@ -12,3 +12,7 @@ rails g scaffold post title body:text user:references
 
 4. Create ERD
 ![Domain Model](erd.png?raw=true "Domain Model")
+
+5. Add `rack-cors` to allow requests from other sites
+
+6. Skip forgery protection with JSON endpoings
