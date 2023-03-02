@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Added devise, bundle install
 
-Things you may want to cover:
+2. Created models
+```bash
+rails g devise user
+rails g scaffold post title body:text user:references
+```
 
-* Ruby version
+3. Created `dev:prime` task for sample data
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+4. Create ERD
+![Domain Model](erd.png?raw=true "Domain Model")
